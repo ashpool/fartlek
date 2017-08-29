@@ -1,5 +1,5 @@
 The Fartlek Machine
-![Fartlek](img/fartlek-schematics.png  =100x)
+![Fartlek](img/fartlek-schematics.png)
 
 > Fartlek, which means "speed play" in Swedish, is a training method that blends continuous training with interval training.
 
