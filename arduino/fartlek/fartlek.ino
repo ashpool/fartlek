@@ -12,14 +12,15 @@ unsigned long currentMillis;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
+  randomSeed(analogRead(0));
 }
 
 void loop() {
   currentMillis = millis();
-  if( state == NEW) 
+  if(state == NEW) 
   {
     previousMillis = currentMillis;
-    n = random(1,5);
+    n = random(1, 6);
     interval = second * intervals[n -1];
     for(int i = 0; i < n; i++) {
       digitalWrite(ledPin, HIGH);
@@ -30,9 +31,9 @@ void loop() {
     state = RUNNING;
   }
 
-  if( state == RUNNING) 
+  if(state == RUNNING) 
   {
-    if (currentMillis - previousMillis >= interval / 2) {
+    if(currentMillis - previousMillis >= interval / 2) {
       digitalWrite(ledPin, HIGH);
       delay(200);
       digitalWrite(ledPin, LOW);
@@ -44,9 +45,9 @@ void loop() {
     }
   }
 
-  if( state == REST) 
+  if(state == REST) 
   {
-    if (currentMillis - previousMillis >= interval) {
+    if(currentMillis - previousMillis >= interval) {
       state = NEW;
     }
   }
