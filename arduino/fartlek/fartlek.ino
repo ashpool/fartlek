@@ -19,6 +19,7 @@ void loop() {
   currentMillis = millis();
   if(state == NEW) 
   {
+    state = RUNNING;
     previousMillis = currentMillis;
     n = random(1, 6);
     interval = second * intervals[n -1];
@@ -28,12 +29,12 @@ void loop() {
       digitalWrite(ledPin, LOW);
       delay(100);
     }
-    state = RUNNING;
   }
 
   if(state == RUNNING) 
   {
     if(currentMillis - previousMillis >= interval / 2) {
+      state = REST;
       digitalWrite(ledPin, HIGH);
       delay(200);
       digitalWrite(ledPin, LOW);
@@ -41,7 +42,6 @@ void loop() {
       digitalWrite(ledPin, HIGH);
       delay(1000);
       digitalWrite(ledPin, LOW);
-      state = REST;
     }
   }
 
