@@ -41,11 +41,10 @@ module outerHandle() {
             cylinder(d=40, h=height);
             cylinder(d=18, h=height);
             translate([0, 0, height/2 + 2]) innerHandle();
-            translate([0, 20, 110]) rotate([90, 0, 180]) cylinder(h=4, r1=4, r2=16, center=true);
-            translate([20.3, 5, 5]) rotate([0, -90, 180]) linear_extrude(height = 1) {
+            translate([0, 20, 110]) rotate([90, 0, 180]) cylinder(h=9, r1=2, r2=16, center=true);
+            translate([19.4, 5, 8]) rotate([0, -90, 180]) linear_extrude(height = 1) {
                 text("Fartlek", font = "Liberation Sans:style=Bold Italic");
-            }
-            
+            } 
         }
     }
 }
