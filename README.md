@@ -1,5 +1,13 @@
 # The Fartlek Machine
 
+<img src="img/fartlek-outer.jpg" alt="The Fartlek Machine" height="300">
+
+*The outer shell has the shape of a half length relay stick, here printed with flexible filament*
+
+<img src="img/fartlek-inner.jpg" alt="The Fartlek Machine" height="300">
+
+*Hardware fitted into 3D printed inner casing*
+
 > Fartlek, which means "speed play" in Swedish, is a training method that blends continuous training with interval training.
 
 https://en.wikipedia.org/wiki/Fartlek
