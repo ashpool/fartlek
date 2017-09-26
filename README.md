@@ -1,5 +1,5 @@
 # The Fartlek Machine
-<img src="img/fartlek-outer.jpg" alt="The Fartlek Machine" height="300"><img src="img/fartlek-inner.jpg" alt="The Fartlek Machine" height="300">
+<img src="img/fartlek-outer.jpg" alt="The Fartlek Machine" height="300"> <img src="img/fartlek-inner.jpg" alt="The Fartlek Machine" height="300">
 
 *A half length relay stick packed with hardware*
 
