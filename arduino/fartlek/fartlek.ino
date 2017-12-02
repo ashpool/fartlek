@@ -1,6 +1,6 @@
 const unsigned long second = 500;
 const int ledPin =  LED_BUILTIN;
-const unsigned long intervals[] = {30, 60, 120, 180, 240};
+const unsigned long intervals[] = {15, 30, 45, 60, 75};
 unsigned long previousMillis = 0;   
 unsigned long interval = second;         
 unsigned long n = 0;
